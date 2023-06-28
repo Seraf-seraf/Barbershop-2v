@@ -36,7 +36,7 @@
   border: 1px solid #E5DDD5;
 
   &::after {
-    content: url('../../../images/ui-icons/left-arrow.svg');
+    content: url(../../images/ui-icons/left-arrow.svg);
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +49,7 @@
   border: 1px solid #E5DDD5;
 
   &::after {
-    content: url('../../../images/ui-icons/right-arrow.svg');
+    content: url(../../images/ui-icons/right-arrow.svg);
   }
 
   @media (min-width: $desktop-width) {

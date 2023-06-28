@@ -118,7 +118,7 @@
   border: 1px solid #E5DDD5;
 }
 .slider__button_prev::after {
-  content: url("../../../images/ui-icons/left-arrow.svg");
+  content: url(../../images/ui-icons/left-arrow.svg);
 }
 @media (min-width: 1200px) {
   .slider__button_prev {
@@ -131,7 +131,7 @@
   border: 1px solid #E5DDD5;
 }
 .slider__button_next::after {
-  content: url("../../../images/ui-icons/right-arrow.svg");
+  content: url(../../images/ui-icons/right-arrow.svg);
 }
 @media (min-width: 1200px) {
   .slider__button_next {
