@@ -1,0 +1,237 @@
+.stats {
+  background-color: $darkgrey;
+  color: #ffffff;
+  @media (min-width: $tablet-width) {
+    background-color: #353535;
+  }
+}
+
+.stats__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: calc(100% - 128px);
+    margin: 0 auto;
+    top: -175px;
+    margin-bottom: -175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -169px;
+    margin: 0 auto;
+    margin-bottom: -169px;
+    width: calc(100% - 240px);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.stats__header {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 28px 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 32px;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -23px;
+      top: 42px;
+      width: 23px;
+      height: 23px;
+      background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjMiIGhlaWdodD0iMjMiIHZpZXdCb3g9IjAgMCAyMyAyMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTAgMEgyM1YyM0wxMS41IDExLjVMMCAwWiIgZmlsbD0id2hpdGUiLz4KPC9zdmc+Cg==");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto;
+    grid-template-rows: min-content 1fr min-content;
+    align-content: start;
+    padding-right: 0;
+  }
+}
+
+.stats__legend {
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    line-height: 27px;
+  }
+}
+
+.stats__legend_top {
+  color: rgba(0, 0, 0, 0.3);
+  text-align: left;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.stats__legend_bottom {
+  display: block;
+  color: rgba(255, 255, 255, 0.3);
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.stats__slogan {
+  text-align: center;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 13px;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 17px;
+    text-align: left;
+    text-transform: none;
+    font-size: 40px;
+    line-height: 40px;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.stats__intro {
+  display: flex;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #000000;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 34px;
+    text-align: left;
+    align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    margin-bottom: 35px;
+  }
+}
+
+// Таблица статистики
+
+.stats__list {
+  margin: 0;
+  margin-bottom: 20px;
+  background-color: #353535;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.stats__item {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-top: 25px;
+    padding-left: 34px;
+    padding-right: 34px;
+    padding-bottom: 30px;
+  }
+}
+
+.stats__item:nth-child(1) {
+  background: rgba(#ffffff, 0.05);
+}
+
+.stats__item:nth-child(2) {
+  background: rgba(#ffffff, 0.12);
+}
+
+.stats__item:nth-child(4) {
+  background: rgba(#ffffff, 0.12);
+
+  @media (min-width: $tablet-width) {
+    background: rgba(#ffffff, 0.05);
+  }
+}
+
+.stats__number {
+  display: flex;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+
+  @media (min-width: $tablet-width) {
+    font-size: 68px;
+    line-height: 72px;
+    margin-bottom: 12px;
+  }
+
+  sup {
+    position: static;
+    font-size: inherit;
+    vertical-align: baseline;
+    margin-left: 5px;
+  }
+}
+
+.stats__description {
+  display: flex;
+  text-align: right;
+  word-wrap: break-word;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: auto;
+    font-size: 20px;
+    line-height: 20px;
+
+    br {
+      display: none;
+    }
+  }
+}

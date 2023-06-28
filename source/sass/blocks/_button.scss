@@ -1,0 +1,37 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid #E5DDD5;
+  height: 50px;
+  background-color: transparent;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 160px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #D5C9BD;
+  }
+
+  &:active {
+    background: #D5C9BD;
+
+    span {
+      opacity: 0.3;
+    }
+  }
+}

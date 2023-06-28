@@ -1,0 +1,274 @@
+.works {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    bottom: -34px;
+    width: 100%;
+    height: 34px;
+    background-color: #f8f5f2;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    z-index: 5;
+    overflow-x: hidden;
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+}
+
+.works__wrapper {
+  padding: 32px 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 64px 64px 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 64px 120px 90px;
+  }
+}
+
+.works__to-home {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 54px;
+    right: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 120px;
+  }
+}
+
+.works__title {
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 30px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 90px;
+  }
+}
+
+.works__list {
+  list-style: none;
+  width: 280px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+
+    .works__item:first-child {
+      width: 100%;
+    }
+
+    .works__item:not(:first-child) {
+      width: 294px;
+    }
+  }
+}
+
+.works__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border: 1px solid #E5DDD5;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+
+    &:not(:first-child) {
+      flex-direction: column;
+    }
+  }
+
+  img {
+    display: block;
+
+    @media (max-width: $mobile-width-only) {
+      width: 278px;
+    }
+
+    @media (min-width: $desktop-width) {
+      &:not(.works__item:first-child img) {
+        width: 293px;
+      }
+    }
+  }
+}
+
+/*Задаю высоту для контента элементов списка планшетной и компьютерной версии*/
+@media (min-width: $tablet-width) {
+  .works__item:first-child .works__content {
+    min-height: 480px;
+  }
+
+  .works__content:not(:first-child) {
+    width: 100%;
+    min-height: 294px;
+    height: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .works__item:first-child .works__content {
+    padding-top: 135px;
+    padding-left: 42px;
+  }
+}
+
+/*Лейбл "Работа месяца"*/
+.works__best-work {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 401px;
+  width: 176px;
+  height: 50px;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 27px;
+  color: #FFFFFF;
+  padding-left: 20px;
+  background-image: url("../../images/another-icons/label.svg");
+
+  @media (min-width: $tablet-width) {
+    top: 35px;
+    left: -2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 26px;
+    left: auto;
+    right: 0;
+    padding-left: 35px;
+    background-image: url("../../images/another-icons/label-rotate(180deg).svg");
+  }
+}
+
+.works__item:last-child {
+  margin-bottom: 0;
+}
+
+.works__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-right: 41px;
+  padding-bottom: 26px;
+  padding-left: 23px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 34px 35px 40px;
+  }
+}
+
+.content__author-name {
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+}
+
+.content__reviews {
+  display: block;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 30px;
+  word-break: break-word;
+}
+
+.content__tags {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 36px;
+  row-gap: 25px;
+  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.tags__item {
+  display: flex;
+  align-items: center;
+  height: 30px;
+}
+
+.tags__item_haircut::before {
+  align-items: center;
+  margin-top: 7px;
+  content: url("../../images/tags-icons/scissors-icon.svg");
+  margin-right: 15px;
+}
+
+.tags__item_shaving::before {
+  align-items: center;
+  margin-top: 6px;
+  content: url("../../images/tags-icons/beard-icon.svg");
+  margin-right: 15px;
+}
+
+.tags__item_mustache::before {
+  align-items: center;
+  content: url("../../images/tags-icons/mustache-icon.svg");
+  transform: translateX(-25%);
+}
+
+.tags__item_beard::before {
+  align-items: center;
+  margin-top: 6px;
+  content: url("../../images/tags-icons/beard-icon.svg");
+  margin-right: 15px;
+}

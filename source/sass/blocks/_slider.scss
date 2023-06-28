@@ -1,0 +1,88 @@
+/* Фикс отображения элементов двух слайдерв и сохранения ими своей разметки */
+.slider__item {
+  display: none !important;
+
+  &_current {
+    display: flex !important;
+  }
+}
+
+.slider__button {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  width: 50px;
+  background-color: transparent;
+
+  &:hover {
+    border: 1px solid #D5C9BD;
+  }
+
+  &:active {
+    background: #D5C9BD;
+
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.slider__button_prev {
+  left: -50px;
+  border: 1px solid #E5DDD5;
+
+  &::after {
+    content: url('../../../images/ui-icons/left-arrow.svg');
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -71px
+  }
+}
+
+.slider__button_next {
+  right: -50px;
+  border: 1px solid #E5DDD5;
+
+  &::after {
+    content: url('../../../images/ui-icons/right-arrow.svg');
+  }
+
+  @media (min-width: $desktop-width) {
+    right: -71px
+  }
+}
+
+.slider__toggle {
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  transform: rotate(45deg);
+}
+
+.slider__toggle_current {
+  background-color: #ffffff;
+}
+
+.slider__toggles {
+  position: relative;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100px;
+}
+
+/*Выключение слайдера при разрешении от 768px*/
+
+@media (min-width: $tablet-width) {
+  .advantages__item {
+    display: flex !important;
+  }
+}

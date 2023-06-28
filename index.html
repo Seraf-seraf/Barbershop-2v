@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="барбершоп, мужские парикмахерские, топган, topgun">
+  <meta name="description" content="Стригись у крутых барберов по земным ценам!">
+
+  <meta name="apple-mobile-web-app-title" content="Барбершоп">
+  <meta name="application-name" content="Барбершоп">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="msapplication-config" content="source/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="source/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="source/favicon/favicon-16x16.png">
+  <link rel="manifest" href="source/favicon/site.webmanifest">
+  <link rel="mask-icon" href="source/favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="source/favicon/favicon.ico">
+
+  <link rel="stylesheet" href="source/css/style.css">
+
+  <title>Барбершоп «Бородинский»</title>
+</head>
+<body class="page__body">
+
+  <header class="page-header">
+    <a class="page-header__logo" href="#">
+      <picture>
+        <source media="(min-width: 1200px)" srcset=images/logotype/logotype-desktop.svg>
+        <source media="(min-width: 768px)" srcset=images/logotype/logotype-tablet.svg>
+        <img src="images/logotype/logotype-mobile.svg" alt="Барбершоп «Бородинский»">
+      </picture>
+    </a>
+    <nav class="main-navigation main-navigation_closed main-navigation_nojs">
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-navigation__wrapper">
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item_active">
+            <a href="#">ГЛАВНАЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">НАШИ РАБОТЫ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">ЗАПИСАТЬСЯ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">КОНТАКТЫ</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+        <ul class="main-navigation__list user-list">
+          <li class="user-list__item">
+            <a class="user-list__login js-login" href="login.html">
+              <svg class="user-list__login-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>
+                <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+              </svg>
+              <span>Войти</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Барбершоп «Бородинский» — истинно мужская классика</h1>
+    <section class="stats">
+      <div class="stats__wrapper">
+        <header class="stats__header">
+          <h2 class="visually-hidden">Статистика Барбершопа</h2>
+          <p class="stats__slogan">
+            Стрижка у нас<br>это выгодно!
+          </p>
+          <p class="stats__intro">
+            Мужская стрижка требует<br> точного подхода. Обратимся<br> к статистике:
+          </p>
+          <p class="stats__legend stats__legend_top">
+              * — приведённые данные ложь
+          </p>
+        </header>
+        <dl class="stats__list">
+          <div class="stats__item">
+            <dt class="stats__number">
+              1500<sup>*</sup>
+            </dt>
+            <dd class="stats__description">
+                рублей<br> вложений
+            </dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__number">
+              7 200
+            </dt>
+            <dd class="stats__description">
+                секунд<br> времени мастера
+            </dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__number">
+              90 000
+            </dt>
+            <dd class="stats__description">
+                постриженных<br> волос
+            </dd>
+          </div>
+          <div class="stats__item">
+            <dt class="stats__number">
+              500 000<sup>*</sup>
+            </dt>
+            <dd class="stats__description">
+                лайков и<br> комплиментов
+            </dd>
+          </div>
+        </dl>
+        <!-- Текст ниже в планшетной и компьютерной версии перемещается в шапку -->
+        <p class="stats__legend stats__legend_bottom">
+          * — приведённые данные ложь
+        </p>
+      </div>
+    </section>
+
+    <section class="advantages">
+      <div class="advantages__wrapper slider1">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="advantages__list slider__list">
+          <li class="advantages__item advantages__item--fast slider__item slider__item_current">
+            <h3 class="advantages__title">БЫСТРО</h3>
+            <p class="advantages__description">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы – счастливый обладатель стильной стрижки-минутки</p>
+          </li>
+          <li class="advantages__item advantages__item--cool slider__item">
+            <h3 class="advantages__title">КРУТО</h3>
+            <p class="advantages__description">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+          </li>
+          <li class="advantages__item advantages__item--price slider__item">
+            <h3 class="advantages__title">ДОРОГО</h3>
+            <p class="advantages__description">Наши мастера — профессионалы своего дела не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+          </li>
+        </ul>
+        <div class="advantages__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle_current" type="button">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">3</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="news">
+      <div class="news__wrapper">
+        <h2 class="news__title">Новости и акции</h2>
+        <ul class="news__list">
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2023-09-29">
+                <b>29</b>
+                <span>СЕНТ</span>
+              </time>
+              <p class="news__text">
+                Нам наконец-то завезли Егермейстер! Теперь вы можете пропустить стаканчик во время стрижки.
+              </p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2023-09-09">
+                <b>19</b>
+                <span>СЕНТ</span>
+              </time>
+              <p class="news__text">
+                В нашей команде пополнение, Борис «Бритва» Стригунец, пополнил наши стройные ряды. Спешите записаться!
+              </p>
+            </a>
+          </li>
+          <!--
+            news__item_hidden - спрятать элемент
+           -->
+          <li class="news__item news__item_hidden">
+            <a class="news__link" href="#">
+              <time class="news__date" datetime="2023-09-09">
+                <b>9</b>
+                <span>СЕНТ</span>
+              </time>
+              <p class="news__text">
+                Все дорожает, а наши стрижки нет! Как так? Приходите, постригитесь и узнаете, в чем здесь подвох!
+              </p>
+            </a>
+          </li>
+        </ul>
+        <a class="news__to-all button" href="#"><span>Показать все</span></a>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__wrapper slider2">
+        <h2 class="reviews__title">Отзывы о нас</h2>
+        <a class="reviews__write button" href=""><span>Оставить свой</span></a>
+        <div class="reviews__list slider__list">
+          <button class="slider__button slider__button_prev" type="button">
+            <span class="visually-hidden">
+              Предыдущий отзыв
+            </span>
+          </button>
+          <blockquote class="reviews__item slider__item slider__item_current">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.jpg 1x, images/reviews-author/photo-travis-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.jpg 1x, images/reviews-author/photo-travis-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
+            </picture>
+            <div class="reviews__author-info">
+              <cite class="reviews__author-title">Трэвис Баркер</cite>
+              <p class="reviews__text">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!
+              </p>
+            </div>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.jpg 1x, images/reviews-author/photo-travis-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.jpg 1x, images/reviews-author/photo-travis-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
+            </picture>
+            <div class="reviews__author-info">
+              <cite class="reviews__author-title">Текст</cite>
+              <p class="reviews__text">Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты.
+              </p>
+            </div>
+          </blockquote>
+          <blockquote class="reviews__item slider__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.jpg 1x, images/reviews-author/photo-travis-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.jpg 1x, images/reviews-author/photo-travis-tablet@2x.jpg 2x">
+              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
+            </picture>
+            <div class="reviews__author-info">
+              <cite class="reviews__author-title">Текст</cite>
+              <p class="reviews__text">
+                Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. Жаренные, бросил?
+              </p>
+            </div>
+          </blockquote>
+          <button class="slider__button slider__button_next" type="button">
+            <span class="visually-hidden">
+              Следующий отзыв
+            </span>
+          </button>
+        </div>
+        <div class="reviews__toggles slider__toggles">
+          <button class="slider__toggle slider__toggle_current" type="button">
+            <span class="visually-hidden">1</span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">2</span>
+          </button>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">3</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">Барбершоп Бородинский</b>
+        <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
+          <a class="contacts__phone" href="tel:+78125556666">
+            <span class="phone__tel">Тел.:</span>  +7 (812) 555-66-66
+          </a>
+        </p>
+      </div>
+      <div class="page-footer__social social">
+        <b class="social__title">Давайте дружить!</b>
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    let navigationMain = document.querySelector('.main-navigation');
+    let navigationToggle = document.querySelector('.main-navigation__toggle');
+
+    navigationMain.classList.remove('main-navigation_nojs');
+
+    navigationToggle.addEventListener('click', function() {
+      if (navigationMain.classList.contains('main-navigation_closed')) {
+        navigationMain.classList.remove('main-navigation_closed');
+        navigationMain.classList.add('main-navigation_opened');
+      } else {
+        navigationMain.classList.add('main-navigation_closed');
+        navigationMain.classList.remove('main-navigation_opened');
+      }
+    });
+
+    // Для первого слайдера:
+    const slider1List = document.querySelector('.slider1 .slider__list');
+    const slider1Items = document.querySelectorAll('.slider1 .slider__item');
+    const slider1Toggles = document.querySelectorAll('.slider1 .slider__toggle');
+
+    // Обрабатываем переключение слайдов по кнопкам
+    slider1Toggles.forEach(function(toggle, index) {
+      toggle.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        // Убираем класс слайдера у всех элементов списка
+        slider1Items.forEach(function(item) {
+          item.classList.remove('slider__item_current');
+        });
+        // Добавляем класс слайдера элементу, соответствующему нажатой кнопке
+        slider1Items[index].classList.add('slider__item_current');
+        // Убираем класс текущей кнопки у всех переключателей
+        slider1Toggles.forEach(function(toggle) {
+          toggle.classList.remove('slider__toggle_current');
+        });
+        // Добавляем класс текущей кнопки нажатой кнопке
+        toggle.classList.add('slider__toggle_current');
+      });
+    });
+
+    // Для второго слайдера:
+    const slider2List = document.querySelector('.slider2 .slider__list');
+    const slider2Items = document.querySelectorAll('.slider2 .slider__item');
+    const slider2Toggles = document.querySelectorAll('.slider2 .slider__toggle');
+    const slider2Buttons = document.querySelectorAll('.slider2 .slider__button');
+
+    // Обрабатываем переключение слайдов по кнопкам
+    slider2Toggles.forEach(function(toggle, index) {
+      toggle.addEventListener('click', function(evt) {
+        evt.preventDefault();
+        // Убираем класс слайдера у всех элементов списка
+        slider2Items.forEach(function(item) {
+          item.classList.remove('slider__item_current');
+        });
+        // Добавляем класс слайдера элементу, соответствующему нажатой кнопке
+        slider2Items[index].classList.add('slider__item_current');
+        // Убираем класс текущей кнопки у всех переключателей
+        slider2Toggles.forEach(function(toggle) {
+          toggle.classList.remove('slider__toggle_current');
+        });
+        // Добавляем класс текущей кнопки нажатой кнопке
+        toggle.classList.add('slider__toggle_current');
+      });
+    });
+
+    const prevButton = document.querySelector('.slider2 .slider__button_prev');
+    const nextButton = document.querySelector('.slider2 .slider__button_next');
+    let currentSlideIndex = 0;
+
+    // Обработчик клика на кнопку "Вправо"
+    nextButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      if (currentSlideIndex < slider2Items.length - 1) {
+        currentSlideIndex++;
+      } else {
+        currentSlideIndex = 0;
+      }
+      changeSlide();
+    });
+
+    // Обработчик клика на кнопку "Влево"
+    prevButton.addEventListener('click', function(evt) {
+      evt.preventDefault();
+      if (currentSlideIndex > 0) {
+        currentSlideIndex--;
+      } else {
+        currentSlideIndex = slider2Items.length - 1;
+      }
+      changeSlide();
+    });
+
+    // Функция изменения слайда и переключателей
+    function changeSlide() {
+    slider2Items.forEach(function(item) {
+      item.classList.remove('slider__item_current');
+    });
+    slider2Items[currentSlideIndex].classList.add('slider__item_current');
+    slider2Toggles.forEach(function(toggle) {
+      toggle.classList.remove('slider__toggle_current');
+    });
+      slider2Toggles[currentSlideIndex].classList.add('slider__toggle_current');
+    }
+  </script>
+</body>
+</html>
