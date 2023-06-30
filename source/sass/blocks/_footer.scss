@@ -81,6 +81,7 @@
     &:active {
       border:  1px solid transparent;
       background-color: #252525;
+      color: rgba(#fff, 0.3);
     }
   }
 }
@@ -150,6 +151,7 @@
   &:hover,
   &:focus {
     border: 1px solid #777777;
+    outline: none;
   }
 
   &:active {
@@ -177,7 +179,7 @@
 }
 
 .social__link--instagram {
-  background-image: url('../../images/social-icon/instagram-icon.png');
+  background-image: url('../../images/social-icon/instagram-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -188,7 +190,7 @@
 }
 
 .social__link--facebook {
-  background-image: url('../../images/social-icon/fb-icon.png');
+  background-image: url('../../images/social-icon/fb-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -198,7 +200,7 @@
 }
 
 .social__link--vkontakte {
-  background-image: url('../../images/social-icon/vk-icon.png');
+  background-image: url('../../images/social-icon/vk-icon.svg');
   background-repeat: no-repeat;
   background-position: center;
 
@@ -233,4 +235,16 @@
   text-decoration: none;
   border: 1px solid #4A4A4A;
   padding: 12px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid #777777;
+    outline: none;
+  }
+
+  &:active {
+    border:  1px solid transparent;
+    background-color: #252525;
+    color: rgba(#fff, 0.3);
+  }
 }

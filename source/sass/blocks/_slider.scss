@@ -18,8 +18,10 @@
   width: 50px;
   background-color: transparent;
 
-  &:hover {
+  &:hover,
+  &:focus {
     border: 1px solid #D5C9BD;
+    outline: none;
   }
 
   &:active {
@@ -63,6 +65,10 @@
   background-color: transparent;
   border: 1px solid #ffffff;
   transform: rotate(45deg);
+
+  &:focus {
+    outline: none;
+  }
 }
 
 .slider__toggle_current {

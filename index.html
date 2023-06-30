@@ -23,6 +23,16 @@
 
   <title>Барбершоп «Бородинский»</title>
 </head>
+
+<!-- SVG спрайт -->
+<svg style="display: none">
+  <symbol id="login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 7h7.01V4.06l3.95 3.95-3.95 3.9V9.06L0 9.02V7z"/>
+    <path d="M7.01 0v2h7.02v11.99H7.01V16H16V0H7.01z"/>
+  </symbol>
+</svg>
+
+
 <body class="page__body">
 
   <header class="page-header">
@@ -30,7 +40,7 @@
       <picture>
         <source media="(min-width: 1200px)" srcset=images/logotype/logotype-desktop.svg>
         <source media="(min-width: 768px)" srcset=images/logotype/logotype-tablet.svg>
-        <img src="images/logotype/logotype-mobile.svg" alt="Барбершоп «Бородинский»">
+        <img src="images/logotype/logotype-mobile.svg" width="226" height="30" alt="Барбершоп «Бородинский»">
       </picture>
     </a>
     <nav class="main-navigation main-navigation_closed main-navigation_nojs">
@@ -58,9 +68,8 @@
         <ul class="main-navigation__list user-list">
           <li class="user-list__item">
             <a class="user-list__login js-login" href="login.html">
-              <svg class="user-list__login-icon" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                <polygon points="0 7 7.01 7 7.01 4.06 10.96 8.01 7.01 11.91 7.01 9.06 0 9.02 0 7"/>
-                <polygon points="7.01 0 7.01 2 14.03 2 14.03 13.99 7.01 13.99 7.01 16 16 16 16 0 7.01 0"/>
+              <svg class="user-list__login-icon">
+                <use xlink:href="#login-icon"></use>
               </svg>
               <span>Войти</span>
             </a>
@@ -215,9 +224,12 @@
           </button>
           <blockquote class="reviews__item slider__item slider__item_current">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.webp 1x, images/reviews-author/photo-travis-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.webp 1x, images/reviews-author/photo-travis-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="images/reviews-author/photo-travis-mobile.webp 1x, images/reviews-author/photo-travis-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.jpg 1x, images/reviews-author/photo-travis-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.jpg 1x, images/reviews-author/photo-travis-tablet@2x.jpg 2x">
-              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
+              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" width="50" height="50" alt="Фото Трэвиса Баркера">
             </picture>
             <div class="reviews__author-info">
               <cite class="reviews__author-title">Трэвис Баркер</cite>
@@ -227,9 +239,12 @@
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.webp 1x, images/reviews-author/photo-travis-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.webp 1x, images/reviews-author/photo-travis-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="images/reviews-author/photo-travis-mobile.webp 1x, images/reviews-author/photo-travis-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.jpg 1x, images/reviews-author/photo-travis-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.jpg 1x, images/reviews-author/photo-travis-tablet@2x.jpg 2x">
-              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
+              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" width="50" height="50" alt="Фото Трэвиса Баркера">
             </picture>
             <div class="reviews__author-info">
               <cite class="reviews__author-title">Текст</cite>
@@ -239,9 +254,12 @@
           </blockquote>
           <blockquote class="reviews__item slider__item">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.webp 1x, images/reviews-author/photo-travis-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.webp 1x, images/reviews-author/photo-travis-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="images/reviews-author/photo-travis-mobile.webp 1x, images/reviews-author/photo-travis-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="images/reviews-author/photo-travis-desktop.jpg 1x, images/reviews-author/photo-travis-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="images/reviews-author/photo-travis-tablet.jpg 1x, images/reviews-author/photo-travis-tablet@2x.jpg 2x">
-              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" alt="Фото Трэвиса Баркера">
+              <img class="reviews__author-image" src="images/reviews-author/photo-travis-mobile.jpg" srcset="images/reviews-author/photo-travis-mobile@2x.jpg 2x" width="50" height="50" alt="Фото Трэвиса Баркера">
             </picture>
             <div class="reviews__author-info">
               <cite class="reviews__author-title">Текст</cite>
@@ -284,14 +302,14 @@
       <div class="page-footer__social social">
         <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy"></a>
+          <li class="social__item" tabindex="0">
+            <a class="social__link social__link--vkontakte" tabindex="-1" href="https://vk.com/htmlacademy"></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy"></a>
+          <li class="social__item" tabindex="0">
+            <a class="social__link social__link--facebook" tabindex="-1" href="https://www.facebook.com/htmlacademy"></a>
           </li>
-          <li class="social__item">
-            <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy"></a>
+          <li class="social__item" tabindex="0">
+            <a class="social__link social__link--instagram" tabindex="-1" href="https://www.instagram.com/htmlacademy"></a>
           </li>
         </ul>
       </div>

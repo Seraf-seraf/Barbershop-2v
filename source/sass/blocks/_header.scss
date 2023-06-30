@@ -18,28 +18,33 @@
     order: 2;
     height: 400px;
     background-color: #000000;
-    background-image: url("../../../images/background-image/back-header.jpg");
+    background-image: url("../../../images/background-image/back-header.webp");
     background-repeat: no-repeat;
-    background-position: 50% -9px;
+    background-position: center -90px;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../images/background-image/back-header@2x.jpg");
+      background-image: url("../../../images/background-image/back-header@2x.webp");
       background-size: 1338px auto;
     }
   }
 
   @media (min-width: $desktop-width) {
     height: 648px;
-    background-image: url("../../images/background-image/back-desktop.png");
-    background-position: 50% 0;
+    background-image: url("../../images/background-image/back-desktop.webp");
+    background-position: center 0;
     background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../../../images/background-image/back-header@2x.webp");
+    }
   }
 }
 
 .page-header__logo img {
   width: 226px;
-  height: 85px;
+  height: 30px;
+  margin-top: 30px;
 
   @media (min-width: $tablet-width) {
     display: block;
@@ -64,7 +69,6 @@
   @media (min-width: $desktop-width) {
     height: 310px;
     background-position: 50% -65px;
-    background-size: contain 0;
   }
 
   &::after {
@@ -411,18 +415,11 @@
 
     &:hover .user-list__login-icon {
       opacity: 1;
-
-      polygon {
-        fill: #826550;
-      }
+      fill: #826550;
     }
 
     &:active .user-list__login-icon {
       opacity: 0.3;
-
-      polygon {
-        fill: #ffffff;
-      }
     }
   }
 
@@ -451,17 +448,13 @@
 
     &:active {
       color: rgba(0, 0, 0, 0.3);
-
       background-color: #ffffff;
     }
 
     &:hover .user-list__login-icon,
     &:focus .user-list__login-icon {
       opacity: 0.3;
-
-      polygon {
-        fill: #000000;
-      }
+      fill: #000000;
     }
 
     &:active .user-list__login-icon {
@@ -469,7 +462,6 @@
     }
   }
 }
-
 
 .user-list__login-icon {
   position: absolute;
