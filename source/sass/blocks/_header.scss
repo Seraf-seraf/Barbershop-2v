@@ -18,13 +18,13 @@
     order: 2;
     height: 400px;
     background-color: #000000;
-    background-image: url("../../../images/background-image/back-header.webp");
+    background-image: url("../../images/background-image/back-header.webp");
     background-repeat: no-repeat;
     background-position: center -90px;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../images/background-image/back-header@2x.webp");
+      background-image: url("../../images/background-image/back-header@2x.webp");
       background-size: 1338px auto;
     }
   }
@@ -36,7 +36,7 @@
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../../images/background-image/back-header@2x.webp");
+      background-image: url("../../images/background-image/back-header@2x.webp");
     }
   }
 }
