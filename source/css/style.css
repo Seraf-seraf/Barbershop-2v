@@ -194,7 +194,7 @@
     order: 2;
     height: 400px;
     background-color: #000000;
-    background-image: url("../../../images/background-image/back-header.webp");
+    background-image: url("../../images/background-image/back-header.webp");
     background-repeat: no-repeat;
     background-position: center -90px;
     background-size: cover;
@@ -202,7 +202,7 @@
 }
 @media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
   .page-header__logo {
-    background-image: url("../../../images/background-image/back-header@2x.webp");
+    background-image: url("../../images/background-image/back-header@2x.webp");
     background-size: 1338px auto;
   }
 }
@@ -216,7 +216,7 @@
 }
 @media (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 2dppx) {
   .page-header__logo {
-    background-image: url("../../../images/background-image/back-header@2x.webp");
+    background-image: url("../../images/background-image/back-header@2x.webp");
   }
 }
 
