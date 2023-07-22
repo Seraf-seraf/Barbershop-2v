@@ -6,7 +6,7 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    background-color: #000;
+    background-color: #000000;
   }
 }
 
@@ -18,25 +18,25 @@
     order: 2;
     height: 400px;
     background-color: #000000;
-    background-image: url("../../images/background-image/back-header.webp");
+    background-image: url("../images/background-image/back-header.webp");
     background-repeat: no-repeat;
     background-position: center -90px;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/background-image/back-header@2x.webp");
+      background-image: url("../images/background-image/back-header@2x.webp");
       background-size: 1338px auto;
     }
   }
 
   @media (min-width: $desktop-width) {
     height: 648px;
-    background-image: url("../../images/background-image/back-desktop.webp");
+    background-image: url("../images/background-image/back-desktop.webp");
     background-position: center 0;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../../images/background-image/back-header@2x.webp");
+      background-image: url("../images/background-image/back-header@2x.webp");
     }
   }
 }
@@ -83,14 +83,6 @@
   }
 }
 
-.main-navigation__list {
-  list-style: none;
-
-  a {
-    color: #ffffff;
-  }
-}
-
 .main-navigation__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -111,7 +103,7 @@
   background-color: #826550;
 
   @media (min-width: $tablet-width) {
-    background-color: #000;
+    background-color: #000000;
   }
 }
 
@@ -122,7 +114,7 @@
   right: 0;
   width: 70px;
   height: 50px;
-  background-color: #6A4D38;
+  background-color: #6a4d38;
   border: none;
   cursor: pointer;
   z-index: 2;
@@ -146,13 +138,13 @@
   height: 2px;
   background-color: #ffffff;
   box-shadow: 0 8px 0 0 #ffffff,
-              0 16px 0 0 #ffffff;
+    0 16px 0 0 #ffffff;
 }
 
 .main-navigation_closed .main-navigation__toggle:active::before {
   background-color: rgba(#ffffff, 0.3);
   box-shadow: 0 8px 0 0 rgba(#ffffff, 0.3),
-              0 16px 0 0 rgba(#ffffff, 0.3);
+    0 16px 0 0 rgba(#ffffff, 0.3);
 }
 
 .main-navigation_opened .main-navigation__toggle:active::before,
@@ -186,7 +178,8 @@
 }
 
 .site-list {
-  font-weight: bold;
+  font-weight: 700;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -215,7 +208,7 @@
     border-bottom: 1px solid #71543f;
 
     &:hover {
-      background-color: #755A46;
+      background-color: #755a46;
     }
 
     &:active {
@@ -310,6 +303,7 @@
     display: none;
 
     &_active {
+      position: relative;
       display: block;
 
       a {
@@ -327,11 +321,11 @@
   .main-navigation_opened .main-navigation__wrapper {
     position: absolute;
     top: 0;
+    right: 0;
     left: 70px;
-    z-index: 10;
-    width: calc(100% - 70px);
     min-height: 80vh;
-    background-color: #6A4D38;
+    background-color: #6a4d38;
+    z-index: 2;
   }
 
   .main-navigation_opened .main-navigation__wrapper::before {
@@ -346,7 +340,6 @@
   }
 
   .main-navigation_nojs {
-
     .main-navigation_closed,
     .main-navigation_opened {
       display: none;
@@ -378,13 +371,14 @@
     .user-list__item {
       display: block;
       height: 51px;
-      background-color: #6A4D38;
+      background-color: #6a4d38;
     }
   }
 }
 
 .user-list {
   position: relative;
+  list-style: none;
 
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -399,7 +393,7 @@
   display: block;
   padding: 17px 21px;
   padding-left: 49px;
-  font-weight: normal;
+  font-weight: 400;
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
@@ -430,7 +424,7 @@
     padding: 25px 30px 23px 50px;
     font-size: 18px;
     line-height: 24px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
 
@@ -471,6 +465,7 @@
   height: 16px;
   opacity: 0.3;
   fill: #ffffff;
+
   @media (min-width: $tablet-width) {
     top: 28px;
     left: 12px;

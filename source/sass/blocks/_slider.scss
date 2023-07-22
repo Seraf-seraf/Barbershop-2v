@@ -17,15 +17,16 @@
   bottom: -1px;
   width: 50px;
   background-color: transparent;
+  cursor: pointer;
 
   &:hover,
   &:focus {
-    border: 1px solid #D5C9BD;
+    border: 1px solid #d5c9bd;
     outline: none;
   }
 
   &:active {
-    background: #D5C9BD;
+    background: #d5c9bd;
 
     &::after {
       opacity: 0.3;
@@ -35,27 +36,27 @@
 
 .slider__button_prev {
   left: -50px;
-  border: 1px solid #E5DDD5;
+  border: 1px solid #e5ddd5;
 
   &::after {
-    content: url(../../images/ui-icons/left-arrow.svg);
+    content: url("../images/ui-icons/left-arrow.svg");
   }
 
   @media (min-width: $desktop-width) {
-    left: -71px
+    left: -71px;
   }
 }
 
 .slider__button_next {
   right: -50px;
-  border: 1px solid #E5DDD5;
+  border: 1px solid #e5ddd5;
 
   &::after {
-    content: url(../../images/ui-icons/right-arrow.svg);
+    content: url("../images/ui-icons/right-arrow.svg");
   }
 
   @media (min-width: $desktop-width) {
-    right: -71px
+    right: -71px;
   }
 }
 
@@ -65,6 +66,7 @@
   background-color: transparent;
   border: 1px solid #ffffff;
   transform: rotate(45deg);
+  cursor: pointer;
 
   &:focus {
     outline: none;

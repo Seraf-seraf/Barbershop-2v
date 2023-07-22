@@ -10,7 +10,7 @@
     height: 34px;
     background-color: #f8f5f2;
     clip-path: polygon(50% 100%, 0 0, 100% 0);
-    z-index: 5;
+    z-index: 1;
     overflow-x: hidden;
 
     @media (min-width: $desktop-width) {
@@ -48,7 +48,7 @@
 }
 
 .works__title {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -97,8 +97,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  border: 1px solid #E5DDD5;
+  align-items: flex-start;
+  border: 1px solid #e5ddd5;
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
@@ -125,12 +125,12 @@
       width: 270px;
       height: auto;
     }
+  }
+}
 
-    @media (min-width: $desktop-width) {
-      &:not(.works__item:first-child img) {
-        width: 293px;
-      }
-    }
+@media (min-width: $desktop-width) {
+  .works__item:nth-child(n + 2) img {
+    width: 293px;
   }
 }
 
@@ -162,12 +162,12 @@
   top: 401px;
   width: 176px;
   height: 50px;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
   line-height: 27px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 20px;
   background-image: url("../../images/another-icons/label.svg");
 
@@ -208,7 +208,8 @@
 }
 
 .content__author-name {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  display: block;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -222,7 +223,7 @@
 
 .content__reviews {
   display: block;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -239,7 +240,7 @@
   justify-content: flex-start;
   column-gap: 36px;
   row-gap: 25px;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -255,26 +256,26 @@
 .tags__item_haircut::before {
   align-items: center;
   margin-top: 7px;
-  content: url("../../images/tags-icons/scissors-icon.svg");
+  content: url("../images/tags-icons/scissors-icon.svg");
   margin-right: 15px;
 }
 
 .tags__item_shaving::before {
   align-items: center;
   margin-top: 6px;
-  content: url("../../images/tags-icons/beard-icon.svg");
+  content: url("../images/tags-icons/beard-icon.svg");
   margin-right: 15px;
 }
 
 .tags__item_mustache::before {
   align-items: center;
-  content: url("../../images/tags-icons/mustache-icon.svg");
+  content: url("../images/tags-icons/mustache-icon.svg");
   transform: translateX(-25%);
 }
 
 .tags__item_beard::before {
   align-items: center;
   margin-top: 6px;
-  content: url("../../images/tags-icons/beard-icon.svg");
+  content: url("../images/tags-icons/beard-icon.svg");
   margin-right: 15px;
 }

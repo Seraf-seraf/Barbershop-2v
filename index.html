@@ -10,30 +10,32 @@
   <meta name="apple-mobile-web-app-title" content="Барбершоп">
   <meta name="application-name" content="Барбершоп">
   <meta name="msapplication-TileColor" content="#000000">
-  <meta name="msapplication-config" content="source/favicon/browserconfig.xml">
+  <meta name="msapplication-config" content="favicon/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="source/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="source/favicon/favicon-16x16.png">
-  <link rel="manifest" href="source/favicon/site.webmanifest">
-  <link rel="mask-icon" href="source/favicon/safari-pinned-tab.svg" color="#000000">
-  <link rel="shortcut icon" href="source/favicon/favicon.ico">
+  <link rel="preload" href="images/logotype/logotype-desktop.svg" type="image/svg+xml" as="image" crossorigin="anonymous">
+  <link rel="preload" href="js/modal.min.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="js/navigation.min.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="js/navigation.min.js" as="script" crossorigin="anonymous">
+  <link rel="preload" href="fonts/PTSansNarrow-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="source/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="favicon/favicon.ico">
 
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Барбершоп «Бородинский»</title>
 </head>
-
-<!-- SVG спрайт -->
+<body class="page__body">
+  <!-- SVG спрайт -->
 <svg style="display: none">
   <symbol id="login-icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 7h7.01V4.06l3.95 3.95-3.95 3.9V9.06L0 9.02V7z"/>
     <path d="M7.01 0v2h7.02v11.99H7.01V16H16V0H7.01z"/>
   </symbol>
 </svg>
-
-
-<body class="page__body">
 
   <header class="page-header">
     <a class="page-header__logo" href="#">
@@ -44,11 +46,12 @@
       </picture>
     </a>
     <nav class="main-navigation main-navigation_closed main-navigation_nojs">
+      <h2 class="visually-hidden">Меню</h2>
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-navigation__wrapper">
-        <ul class="main-navigation__list site-list">
+        <ul class="site-list">
           <li class="site-list__item site-list__item_active">
             <a href="#">ГЛАВНАЯ</a>
           </li>
@@ -65,9 +68,9 @@
             <a href="#">HTML ACADEMY</a>
           </li>
         </ul>
-        <ul class="main-navigation__list user-list">
+        <ul class="user-list">
           <li class="user-list__item">
-            <a class="user-list__login js-login" href="login.html">
+            <a class="user-list__login js-login" href="#">
               <svg class="user-list__login-icon">
                 <use xlink:href="#login-icon"></use>
               </svg>
@@ -89,7 +92,7 @@
             Стрижка у нас<br>это выгодно!
           </p>
           <p class="stats__intro">
-            Мужская стрижка требует<br> точного подхода. Обратимся<br> к статистике:
+            Мужская стрижка требует <br>точного подхода. Обратимся <br> к статистике:
           </p>
           <p class="stats__legend stats__legend_top">
               * — приведённые данные ложь
@@ -208,14 +211,14 @@
             </a>
           </li>
         </ul>
-        <a class="news__to-all button" href="#"><span>Показать все</span></a>
+        <button class="news__to-all button" id="showAllButton" type="button"><span>Показать все</span></button>
       </div>
     </section>
 
     <section class="reviews">
       <div class="reviews__wrapper slider2">
         <h2 class="reviews__title">Отзывы о нас</h2>
-        <a class="reviews__write button" href=""><span>Оставить свой</span></a>
+        <a class="reviews__write button" href="#"><span>Оставить свой</span></a>
         <div class="reviews__list slider__list">
           <button class="slider__button slider__button_prev" type="button">
             <span class="visually-hidden">
@@ -295,7 +298,7 @@
         <b class="contacts__title">Барбершоп Бородинский</b>
         <p class="contacts__text">г. Санкт-Петербург, ул. Большая Конюшенная 19/8<br>
           <a class="contacts__phone" href="tel:+78125556666">
-            <span class="phone__tel">Тел.:</span>  +7 (812) 555-66-66
+            <span class="tel">Тел.:</span>  +7 (812) 555-66-66
           </a>
         </p>
       </div>
@@ -303,13 +306,13 @@
         <b class="social__title">Давайте дружить!</b>
         <ul class="social__list">
           <li class="social__item" tabindex="0">
-            <a class="social__link social__link--vkontakte" tabindex="-1" href="https://vk.com/htmlacademy"></a>
+            <a class="social__link social__link--vkontakte" tabindex="-1" href="https://vk.com/htmlacademy" aria-label="Группа Вконтакте"></a>
           </li>
           <li class="social__item" tabindex="0">
-            <a class="social__link social__link--facebook" tabindex="-1" href="https://www.facebook.com/htmlacademy"></a>
+            <a class="social__link social__link--facebook" tabindex="-1" href="https://www.facebook.com/htmlacademy" aria-label="Группа в Facebook"></a>
           </li>
           <li class="social__item" tabindex="0">
-            <a class="social__link social__link--instagram" tabindex="-1" href="https://www.instagram.com/htmlacademy"></a>
+            <a class="social__link social__link--instagram" tabindex="-1" href="https://www.instagram.com/htmlacademy" aria-label="Группа в Instagram"></a>
           </li>
         </ul>
       </div>
@@ -320,108 +323,58 @@
     </div>
   </footer>
 
-  <script>
-    let navigationMain = document.querySelector('.main-navigation');
-    let navigationToggle = document.querySelector('.main-navigation__toggle');
+  <!-- Модальное окно специальный класс modal_open -->
+  <section class="modal">
+    <div class="modal__container">
+      <button class="modal__button-close">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+      <div class="modal__content">
+        <h2 class="modal__title">Личный кабинет</h2>
+        <form class="form form__login" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form__container">
+            <p class="form__input">
+              <label class="visually-hidden" for="form__login">Логин</label>
+              <input class="form__field" id="form__login" name="login" placeholder="Логин" type="text" required>
+            </p>
+            <p class="form__input">
+              <label class="visually-hidden" for="form__password">Логин</label>
+              <input class="form__field" id="form__password" name="password" placeholder="Пароль" type="password" minlength="8" maxlength="26" required>
+            </p>
+            <p class="form__user-options">
+              <label class="control__user control">
+                <input class="visually-hidden control__input" type="checkbox" name="save-login">
+                <span class="control__mark"></span>
+                <span class="control__label">Запомнить меня</span>
+              </label>
+              <a class="form__recovery" href="#">Забыли пароль?</a>
+            </p>
+          </div>
+          <button class="button button_login"><span>Войти</span></button>
+          <button class="button button_registration" disabled><span>Зарегистрироваться</span></button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    navigationMain.classList.remove('main-navigation_nojs');
+<script src="js/navigation.min.js"></script>
+<script src="js/index-slider.min.js"></script>
+<script src="js/modal.min.js"></script>
+<script>
+  let showAllButton = document.getElementById('showAllButton');
+  let newsItems = Array.from(document.getElementsByClassName('news__item_hidden'));
 
-    navigationToggle.addEventListener('click', function() {
-      if (navigationMain.classList.contains('main-navigation_closed')) {
-        navigationMain.classList.remove('main-navigation_closed');
-        navigationMain.classList.add('main-navigation_opened');
-      } else {
-        navigationMain.classList.add('main-navigation_closed');
-        navigationMain.classList.remove('main-navigation_opened');
-      }
+  showAllButton.addEventListener('click', function() {
+    newsItems.forEach(function(newsItems) {
+        newsItems.classList.toggle('news__item_hidden');
     });
 
-    // Для первого слайдера:
-    const slider1List = document.querySelector('.slider1 .slider__list');
-    const slider1Items = document.querySelectorAll('.slider1 .slider__item');
-    const slider1Toggles = document.querySelectorAll('.slider1 .slider__toggle');
-
-    // Обрабатываем переключение слайдов по кнопкам
-    slider1Toggles.forEach(function(toggle, index) {
-      toggle.addEventListener('click', function(evt) {
-        evt.preventDefault();
-        // Убираем класс слайдера у всех элементов списка
-        slider1Items.forEach(function(item) {
-          item.classList.remove('slider__item_current');
-        });
-        // Добавляем класс слайдера элементу, соответствующему нажатой кнопке
-        slider1Items[index].classList.add('slider__item_current');
-        // Убираем класс текущей кнопки у всех переключателей
-        slider1Toggles.forEach(function(toggle) {
-          toggle.classList.remove('slider__toggle_current');
-        });
-        // Добавляем класс текущей кнопки нажатой кнопке
-        toggle.classList.add('slider__toggle_current');
-      });
-    });
-
-    // Для второго слайдера:
-    const slider2List = document.querySelector('.slider2 .slider__list');
-    const slider2Items = document.querySelectorAll('.slider2 .slider__item');
-    const slider2Toggles = document.querySelectorAll('.slider2 .slider__toggle');
-    const slider2Buttons = document.querySelectorAll('.slider2 .slider__button');
-
-    // Обрабатываем переключение слайдов по кнопкам
-    slider2Toggles.forEach(function(toggle, index) {
-      toggle.addEventListener('click', function(evt) {
-        evt.preventDefault();
-        // Убираем класс слайдера у всех элементов списка
-        slider2Items.forEach(function(item) {
-          item.classList.remove('slider__item_current');
-        });
-        // Добавляем класс слайдера элементу, соответствующему нажатой кнопке
-        slider2Items[index].classList.add('slider__item_current');
-        // Убираем класс текущей кнопки у всех переключателей
-        slider2Toggles.forEach(function(toggle) {
-          toggle.classList.remove('slider__toggle_current');
-        });
-        // Добавляем класс текущей кнопки нажатой кнопке
-        toggle.classList.add('slider__toggle_current');
-      });
-    });
-
-    const prevButton = document.querySelector('.slider2 .slider__button_prev');
-    const nextButton = document.querySelector('.slider2 .slider__button_next');
-    let currentSlideIndex = 0;
-
-    // Обработчик клика на кнопку "Вправо"
-    nextButton.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      if (currentSlideIndex < slider2Items.length - 1) {
-        currentSlideIndex++;
-      } else {
-        currentSlideIndex = 0;
-      }
-      changeSlide();
-    });
-
-    // Обработчик клика на кнопку "Влево"
-    prevButton.addEventListener('click', function(evt) {
-      evt.preventDefault();
-      if (currentSlideIndex > 0) {
-        currentSlideIndex--;
-      } else {
-        currentSlideIndex = slider2Items.length - 1;
-      }
-      changeSlide();
-    });
-
-    // Функция изменения слайда и переключателей
-    function changeSlide() {
-    slider2Items.forEach(function(item) {
-      item.classList.remove('slider__item_current');
-    });
-    slider2Items[currentSlideIndex].classList.add('slider__item_current');
-    slider2Toggles.forEach(function(toggle) {
-      toggle.classList.remove('slider__toggle_current');
-    });
-      slider2Toggles[currentSlideIndex].classList.add('slider__toggle_current');
-    }
-  </script>
+  if (showAllButton.textContent === 'Показать все') {
+      showAllButton.textContent = 'Скрыть';
+  } else {
+      showAllButton.textContent = 'Показать все';
+  }
+  });
+</script>
 </body>
 </html>

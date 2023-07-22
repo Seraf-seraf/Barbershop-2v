@@ -1,58 +1,16 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-// Переменные
-$darkgrey: #292929;
-$lightgrey: #f8f5f2;
-
-
-$tablet-width: 768px;
-$desktop-width: 1200px;
-$mobile-width-only: 767px;
-
-@font-face {
-  font-family: 'PT Sans Narrow';
-  font-style: normal;
-  font-weight: 700;
-  src: url('../../fonts/PTSansNarrow-Bold.woff2') format('woff2'), url('../../fonts/PTSansNarrow-Bold.woff') format('woff'), url('../../fonts/PTSansNarrow-Bold.ttf') format('truetype');
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'PT Sans Narrow';
-  font-style: normal;
-  font-weight: 400;
-  src: url('../../fonts/PTSansNarrow-Regular.woff2') format('woff2'), url('../../fonts/PTSansNarrow-Regular.woff') format('woff'), url('../../fonts/PTSansNarrow-Regular.ttf') format('truetype');
-  font-display: swap;
-}
-
-.page {
-  font-size: 18px;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
-}
-
-.page__body {
-  min-height: 100%;
-  margin: 0;
-  background-color: $lightgrey;
-  color: #000000;
-}
-
-// Блоки
-@import "blocks/normalize.scss";
-@import "blocks/_button.scss";
-@import "blocks/_slider.scss";
-@import "blocks/_header.scss";
-@import "blocks/_stats.scss";
-@import "blocks/_advantages.scss";
-@import "blocks/_reviews.scss";
-@import "blocks/_appointment.scss";
-@import "blocks/_footer.scss";
-@import "blocks/_news.scss";
-@import "blocks/_price.scss";
-@import "blocks/_works.scss";
+@import "blocks/normalize";
+@import "blocks/variables";
+@import "blocks/fonts";
+@import "blocks/page";
+@import "blocks/_button";
+@import "blocks/_modal";
+@import "blocks/_slider";
+@import "blocks/_header";
+@import "blocks/_stats";
+@import "blocks/_advantages";
+@import "blocks/_reviews";
+@import "blocks/_appointment";
+@import "blocks/_footer";
+@import "blocks/_news";
+@import "blocks/_price";
+@import "blocks/_works";

@@ -1,6 +1,7 @@
 .stats {
   background-color: $darkgrey;
   color: #ffffff;
+
   @media (min-width: $tablet-width) {
     background-color: #353535;
   }
@@ -11,14 +12,14 @@
     position: relative;
     width: calc(100% - 128px);
     margin: 0 auto;
-    top: -175px;
-    margin-bottom: -175px;
+    top: -186px;
+    margin-bottom: -186px;
   }
 
   @media (min-width: $desktop-width) {
-    top: -169px;
+    top: -162px;
     margin: 0 auto;
-    margin-bottom: -169px;
+    margin-bottom: -162px;
     width: calc(100% - 240px);
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -53,13 +54,13 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: auto;
     grid-template-rows: min-content 1fr min-content;
-    align-content: start;
+    align-content: flex-start;
     padding-right: 0;
   }
 }
 
 .stats__legend {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -78,6 +79,7 @@
   @media (max-width: $mobile-width-only) {
     display: none;
   }
+
   @media (min-width: $tablet-width) {
     display: block;
   }
@@ -95,7 +97,7 @@
 
 .stats__slogan {
   text-align: center;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -105,30 +107,29 @@
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 17px;
+    padding-bottom: 24px;
+    margin-left: 0;
     text-align: left;
     text-transform: none;
     font-size: 40px;
     line-height: 40px;
-    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 38px;
+    padding-bottom: 38px;
   }
 }
 
 .stats__intro {
   display: flex;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  justify-content: center;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
   text-align: center;
   color: #000000;
-  padding-left: 20px;
-  padding-right: 20px;
 
   @media (max-width: $mobile-width-only) {
     br {
@@ -137,19 +138,21 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-left: 34px;
     text-align: left;
     align-items: center;
+    margin-top: -7px;
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 0;
-    margin-bottom: 35px;
+    padding-bottom: 35px;
+    margin-top: auto;
+    margin-left: 0;
+    margin-right: auto;
   }
 }
 
-// Таблица статистики
-
+/* Таблица статистики */
 .stats__list {
   margin: 0;
   margin-bottom: 20px;
@@ -198,7 +201,7 @@
 
 .stats__number {
   display: flex;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;

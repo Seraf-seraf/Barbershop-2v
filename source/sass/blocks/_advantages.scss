@@ -1,6 +1,6 @@
 .advantages::after {
   display: block;
-  content: '';
+  content: "";
   height: 35px;
   width: 100%;
   background-color: #292929;
@@ -89,7 +89,7 @@
   }
 }
 
-.advantages__item:not(:first-child):after {
+.advantages__item:not(:first-child)::after {
   @media (min-width: $tablet-width) {
     content: "";
     position: absolute;
@@ -120,21 +120,21 @@
 
 .advantages__item--fast::before {
   position: absolute;
-  content: url('../../images/advantages/advantage-1-icon.svg');
+  content: url("../images/advantages/advantage-1-icon.svg");
   height: 95px;
   width: 95px;
 }
 
 .advantages__item--cool::before {
   position: absolute;
-  content: url('../../images/advantages/advantage-2-icon.svg');
+  content: url("../images/advantages/advantage-2-icon.svg");
   height: 95px;
   width: 95px;
 }
 
 .advantages__item--price::before {
   position: absolute;
-  content: url('../../images/advantages/advantage-3-icon.svg');
+  content: url("../images/advantages/advantage-3-icon.svg");
   height: 95px;
   width: 95px;
 }
@@ -159,7 +159,7 @@
 }
 
 .advantages__title {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -173,7 +173,7 @@
 
 .advantages__description {
   display: block;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -181,12 +181,12 @@
   word-wrap: break-word;
 
   @media (min-width: $tablet-width) and (max-width: $tablet-width) {
-    min-width: 441px
+    min-width: 441px;
   }
 }
 
 .advantages__toggles {
-    @media (min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }

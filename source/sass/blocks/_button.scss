@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -10,9 +10,10 @@
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
-  border: 1px solid #E5DDD5;
+  border: 1px solid #e5ddd5;
   height: 50px;
   background-color: transparent;
+  cursor: pointer;
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
@@ -24,15 +25,52 @@
 
   &:hover,
   &:focus {
-    border: 1px solid #D5C9BD;
+    border: 1px solid #d5c9bd;
     outline: none;
   }
 
   &:active {
-    background: #D5C9BD;
+    background: #d5c9bd;
 
     span {
       opacity: 0.3;
     }
   }
+}
+
+.button:disabled {
+  background-color: #aeaeae;
+  color: #ffffff;
+
+  &:hover,
+  &:focus {
+    border: none;
+    outline: none;
+  }
+
+  &:active {
+    span {
+      opacity: 1;
+    }
+  }
+}
+
+/* Стилизация для модального окна */
+.form__login .button {
+  width: 100%;
+
+  &:not(:last-child) {
+    @media (max-width: $mobile-width-only) {
+      margin-bottom: 6px;
+    }
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.form__login .button_login {
+  background: #826550;
+  color: #ffffff;
 }

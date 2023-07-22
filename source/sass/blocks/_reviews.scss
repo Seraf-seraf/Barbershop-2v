@@ -23,7 +23,7 @@
 
   @media (min-width: $tablet-width) {
     width: calc(100% - 100px);
-    border: 1px solid #E5DDD5;
+    border: 1px solid #e5ddd5;
     margin: 0 auto;
   }
 
@@ -32,10 +32,10 @@
   }
 }
 
- .reviews__item {
+.reviews__item {
   display: flex;
   justify-content: space-between;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -58,6 +58,7 @@
 
 .reviews__author-image {
   display: flex;
+
   @media (max-width: $mobile-width-only) {
     @include square(50px);
     margin-top: 10px;
@@ -65,6 +66,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 5px;
+
     @include square(80px);
     border-radius: 50%;
   }
@@ -94,7 +96,7 @@
 }
 
 .reviews__author-title {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -103,7 +105,7 @@
 }
 
 .reviews__title {
-  font-family: 'PT Sans Narrow';
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;

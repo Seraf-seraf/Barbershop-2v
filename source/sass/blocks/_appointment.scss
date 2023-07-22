@@ -12,7 +12,7 @@
 }
 
 .appointment__title {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -60,25 +60,21 @@
 
 .form__field {
   display: block;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   height: 50px;
   width: 100%;
-  background: #FFFFFF;
-  border: 1px solid #E5DDD5;
+  background: #ffffff;
+  border: 1px solid #e5ddd5;
   outline: none;
   padding: 19px 25px;
 
+  &:hover,
   &:focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6);
-    z-index: 99;
-  }
-
-  &:hover {
-    border: 1px solid #D5C9BD;
+    border: 1px solid #d5c9bd;
   }
 
   &:active {
@@ -88,14 +84,14 @@
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
-  line-height: 30px;
+    line-height: 30px;
     height: 70px;
   }
 }
 
 .form__field::placeholder {
   display: block;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -106,10 +102,6 @@
     font-size: 24px;
     line-height: 31px;
   }
-}
-
-.field-additional-information {
-  resize: none;
 }
 
 /*Блоки форм*/
@@ -150,9 +142,10 @@
   display: block;
   width: 100%;
   min-height: 112px;
-  background: #FFFFFF;
-  border: 1px solid #E5DDD5;
+  background: #ffffff;
+  border: 1px solid #e5ddd5;
   color: #000000;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     min-height: 211px;
@@ -164,7 +157,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid #E5DDD5;
+    border-top: 1px solid #e5ddd5;
   }
 }
 
@@ -184,7 +177,7 @@
 }
 
 .filter-haircut__title {
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -212,7 +205,7 @@
 
 .filter-haircut__item {
   margin: 0 auto;
-  height: 180px;
+  min-height: 180px;
   padding-left: 10px;
   padding-right: 10px;
   margin-bottom: 40px;
@@ -230,22 +223,19 @@
   position: relative;
   width: 52px;
   height: 52px;
-  background: #FFFFFF;
-  border: 1px solid #E5DDD5;
+  background: #ffffff;
+  border: 1px solid #e5ddd5;
   border-radius: 50%;
   margin-bottom: 15px;
+}
 
-  &:focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6);
-  }
+.control__input[type="radio"]:hover + .control__mark,
+.control__input[type="radio"]:focus + .control__mark {
+  border: 1px solid #d5c9bd;
+}
 
-  &:hover {
-    border: 1px solid #D5C9BD;
-  }
-
-  &:active {
-    background: #D5C9BD;
-  }
+.control__input[type="radio"]:active + .control__mark {
+  background: #d5c9bd;
 }
 
 .control__input[type="radio"]:checked + .control__mark::before {
@@ -263,7 +253,7 @@
 .control__label {
   display: flex;
   flex-wrap: wrap;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -282,7 +272,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    border-top: 1px solid #E5DDD5;
+    border-top: 1px solid #e5ddd5;
   }
 }
 
@@ -302,7 +292,7 @@
 
 .services__title {
   display: block;
-  font-family: 'PT Sans Narrow', 'Arial', sans-serif;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -332,8 +322,9 @@
   }
 }
 
-.services_control {
+.services__item .control {
   display: flex;
+  flex-direction: row;
   text-align: left;
 
   .control__label {
@@ -347,22 +338,18 @@
   position: relative;
   min-width: 36px;
   height: 36px;
-  background-color: #fff;
-  border: 1px solid #E5DDD5;
+  background-color: #ffffff;
+  border: 1px solid #e5ddd5;
   margin-right: 25px;
+}
 
+.control__input[type="checkbox"]:focus + .control__mark,
+.control__input[type="checkbox"]:hover + .control__mark {
+  border: 1px solid #d5c9bd;
+}
 
-  &:focus {
-    outline: 4px solid rgba(0, 125, 250, 0.6);
-  }
-
-  &:hover {
-    border: 1px solid #D5C9BD;
-  }
-
-  &:active {
-    background: #D5C9BD;
-  }
+.control__input[type="checkbox"]:active + .control__mark {
+  background: #d5c9bd;
 }
 
 .control__input[type="checkbox"]:checked + .control__mark::before {
@@ -370,20 +357,20 @@
   top: 18px;
   left: 18px;
   transform: translate(-50%, -50%);
-  content: url("./../../images/ui-icons/arrow.svg");
+  content: url("../images/ui-icons/arrow.svg");
 }
 
 .appointment__submit {
-  color: #fff;
+  color: #ffffff;
   background-color: #826550;
 
   &:hover,
   &:focus {
-    background-color: #6A4D38;
+    background-color: #6a4d38;
   }
 
   &:active {
-    background-color: #6A4D38;
+    background-color: #6a4d38;
 
     span {
       color: rgba(255, 255, 255, 0.3);

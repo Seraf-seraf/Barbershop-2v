@@ -1,0 +1,12 @@
+.page {
+  font-size: 18px;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  background-color: $lightgrey;
+  color: #000000;
+  overflow-x: hidden; /* Фикс бага появления горизонтальной прокрутки при отображении через External адрес gulp */
+}
